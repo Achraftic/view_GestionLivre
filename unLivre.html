@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/fontawesome-free-6.5.2-web/css/all.min.css">
+<link rel="stylesheet" href="./style/unLivre.css">
+  </head>
+  <body>
+    <div class="phonenav ">
+       <div class="xmark"> <i class="fa-solid fa-xmark fa-xl"></i></div>
+        <ul class="phonelink">
+            <li>Livres</li>
+            <li>Categories</li>
+            <li>About Us</li>
+            <li>Contact</li>
+         
+         <span>
+            <li class=" form loginnav">Login</li>
+            <li class="form active">Register</li>
+         </span>
+          
+          </ul>
+    </div>
+    <div class="container">
+      <header class="homeHeader">
+        <div class="blur"></div>
+        <nav class="laptopNav">
+          <h1>Logo</h1>
+
+          <ul class="link">
+            <li>Livres</li>
+            <li>Categories</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+          <ul class="formLink">
+            <li class="loginList">Login</li>
+            <li class="loginList active">Register</li>
+          </ul>
+
+          <div class="burger">
+            <i class="fa-solid fa-xl fa-bars-staggered"></i>
+            
+          </div>
+       
+        </nav>
+      </header>
+
+ 
+   
+      <a href="#" class="back"> <span><i class="fa-solid fa-angle-left"></i> </span><span>retour</span></a>
+        <div class="flexContainer">
+        
+
+            <div class="image">
+              <img src="./img/poster1.jpg" alt="" />
+            </div>
+            <div class="text">
+
+                <div class="blurdiv"></div>
+                <div class="blurdiv2"></div>
+              <h1>The Past Legend</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae, fuga sint iusto cumque enim excepturi atque
+                distinctio minima placeat, quia sunt accusantium quo qui
+                tenetur? Mollitia commodi aut consectetur tempora?
+              </p>
+              <div class="listinfo">
+                <ul class="key">
+                    <li>Auteur</li>
+                    <li>ISBN</li>
+                    <li>Exemplaire</li>
+                    <li>Etat</li>
+                  </ul>
+                  <ul class="value"> 
+                    <li>Achraf Tic</li>
+                    <li> 019033923</li>
+                    <li>20</li>
+                    <li>Disponible</li>
+    
+                  </ul>
+
+              </div>
+           
+              <button type="submit "  onclick="window.dialog.showModal();">Emprunter</button>
+            </div>
+    
+        </div>
+   <!-- Please ❤ this if you like it! ---
+---- Follow Me https://codepen.io/designfenix -->
+<!--
+----
+----
+----
+----
+----
+----
+---->
+
+
+<dialog id="dialog">
+	<form class="formEmprunte" action="">
+    <div>
+      <label for="Nom">Nom</label>
+      <input type="text" class="input" placeholder="Nom"  disabled value="Achraf">
+    </div>
+    <div>
+      <label for="Nom">Prenom</label>
+      <input type="text" class="input" placeholder="Nom"  disabled value="Achraf">
+    </div>
+    <div>
+      <label for="Nom">Livre</label>
+      <input type="text" class="input" placeholder="Nom"  disabled value="Nom Livre">
+    </div>
+    <div>
+      <label for="date_retour"> Date de retour Prevue</label>  
+      <input type="date" class="input"  placeholder="date_retour">
+    </div>
+ 
+     
+    
+      <button class="submit">Confirmer</button>
+    </form>
+	<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+</dialog>
+    </div>
+
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
